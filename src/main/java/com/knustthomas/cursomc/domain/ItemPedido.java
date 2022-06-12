@@ -10,7 +10,7 @@ public class ItemPedido implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
 	@EmbeddedId
-	private ItemPedidoPk id = new ItemPedidoPk();
+	private ItemPedidoPK id = new ItemPedidoPK();
 	
 	private Double desconto;
 	private Integer quantidade;
@@ -36,11 +36,11 @@ public class ItemPedido implements Serializable{
 		return id.getProduto();
 	}
 
-	public ItemPedidoPk getId() {
+	public ItemPedidoPK getId() {
 		return id;
 	}
 
-	public void setId(ItemPedidoPk id) {
+	public void setId(ItemPedidoPK id) {
 		this.id = id;
 	}
 
